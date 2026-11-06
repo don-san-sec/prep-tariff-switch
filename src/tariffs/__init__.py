@@ -1,0 +1,1 @@
+"""Tariffs for Brightwatt Energy customers."""
