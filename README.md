@@ -53,14 +53,15 @@ Worked examples from the handbook:
 src/tariffs/
   models.py           Tariff, CustomerTariff; fuels and tariff kinds
   catalog.py          the in-memory tariff catalog: add / list / get
+  switching.py        switch_tariff(): record a switch, its fees, its confirmation
   notifications.py    the Notifier interface the app uses to reach customers
 tests/
   fakes.py            FakeNotifier for tests
 ```
 
-Switching itself isn't implemented yet. The app (not part of this service)
-shows the catalog and collects the customer's choice; this service owns the
-tariff models, the catalog, and — once TARF-31 lands — the switch.
+The app (not part of this service) shows the catalog and collects the
+customer's choice; this service owns the tariff models, the catalog, and the
+switch itself.
 
 ## Running locally
 
